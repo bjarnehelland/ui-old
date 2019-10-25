@@ -39,6 +39,7 @@ export const Input: React.FC<Props> = ({
 
 // Styles
 const StyledInput = styled.input`
+  box-sizing: border-box;
   background: ${theme.color.paneBgDark};
   border-radius: 4px;
   border: none;

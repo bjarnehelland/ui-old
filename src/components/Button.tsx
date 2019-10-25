@@ -15,6 +15,8 @@ export type Props = {
 
   /** Button kind */
   kind?: 'default' | 'primary' | 'danger'
+
+  onClick: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
 // Component
 export const Button: React.FC<Props> = ({
@@ -23,11 +25,13 @@ export const Button: React.FC<Props> = ({
   disabled,
   children,
   kind,
+  onClick,
 }) => (
   <StyledButton
     className={`${fluid ? 'fluid' : ''} ${disabled ? 'disabled' : ''} ${
       kind ? kind : ''
     }`}
+    onClick={onClick}
   >
     {text || children}
   </StyledButton>
