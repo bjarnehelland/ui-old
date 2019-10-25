@@ -36,6 +36,7 @@
     "@types/jest": "^24.0.19",
     "@types/react": "^16.3.13",
     "@types/react-dom": "^16.0.5",
+    "@types/styled-components": "^4.1.19",
     "babel-loader": "^8.0.6",
     "cross-env": "^6.0.3",
     "react": "^16.4.1",
@@ -53,5 +54,8 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "styled-components": "^4.4.0"
+  }
 }
