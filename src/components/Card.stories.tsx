@@ -6,8 +6,8 @@ export default {
   title: 'Card',
 }
 
-export const deful = () => (
-  <Card kind={text('kind', 'raised')} hoverKind={'floating'}>
-    This is some text
+export const raisedToFloating = () => (
+  <Card kind={'raised'} hoverKind={'floating'}>
+    {text('Text', 'This is some text')}
   </Card>
 )
