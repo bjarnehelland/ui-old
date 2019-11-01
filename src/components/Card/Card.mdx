@@ -1,0 +1,45 @@
+---
+name: Card
+menu: Components
+route: /card
+---
+
+import { Playground, Props } from 'docz'
+import { Card } from './Card.tsx'
+
+
+
+# Card
+
+Cards make common actions more obvious and help users more easily perform them. Cards use labels and sometimes icons to communicate the action that will occur when the user touches them.
+
+### Best practices
+
+- Group buttons logically into sets based on usage and importance.
+- Ensure that button actions are clear and consistent.
+- The main action of a group set can be a primary button.
+- Select a single button variation and do not mix them.
+
+## Properties
+
+<Props of={Card} />
+
+## Basic usage
+
+<Playground>
+  <Card>Click meee</Card>
+</Playground>
+
+## With different looks
+
+<Playground>
+  <Card kind="default">Click me</Card>
+  <Card kind="bordered">Click me</Card>
+  <Card kind="well">Click me</Card>
+  <Card kind="white">Click me</Card>
+  <Card kind="raised">Click me</Card>
+  <Card kind="floating">Click me</Card>
+  <Card kind="popping">Click me</Card>
+</Playground>
+
+

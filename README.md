@@ -1,28 +1,24 @@
-# ui
+# @bjarnehelland/ui
 
 > My personal react ui library
 
-[![NPM](https://img.shields.io/npm/v/ui.svg)](https://www.npmjs.com/package/ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/ui.svg)](https://www.npmjs.com/package/@bjarnehelland/ui) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save ui
+yarn add @bjarnehelland/ui
 ```
 
 ## Usage
 
 ```tsx
-import * as React from 'react'
+import React from 'react'
 
-import MyComponent from 'ui'
+import { Button } from '@bjarnehelland/ui'
 
-class Example extends React.Component {
-  render () {
-    return (
-      <MyComponent />
-    )
-  }
+const Example = () => {
+  return <Button>Click me</Button>
 }
 ```
 
