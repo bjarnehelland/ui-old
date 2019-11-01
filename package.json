@@ -4,7 +4,7 @@
   "description": "My personal react ui library",
   "author": "bjarnehelland",
   "license": "MIT",
-  "repository": "bjarnehelland/ui",
+  "repository": "https://github.com/bjarnehelland/ui",
   "files": [
     "src/",
     "doczrc.js",
