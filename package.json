@@ -8,10 +8,7 @@
   "main": "lib/index.js",
   "module": "lib/index.es.js",
   "files": [
-    "src/",
-    "doczrc.js",
-    "tsconfig.json",
-    "package.json"
+    "lib/"
   ],
   "scripts": {
     "start": "rollup -c -w",
