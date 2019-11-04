@@ -17,6 +17,7 @@ dist
 .env.test.local
 .env.production.local
 .docz
+public
 
 npm-debug.log*
 yarn-debug.log*
