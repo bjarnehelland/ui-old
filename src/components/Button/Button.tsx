@@ -1,6 +1,5 @@
-import React, { SFC } from 'react'
+import React from 'react'
 import styled from '@emotion/styled'
-
 const scales = {
   small: `
     padding: 5px 10px;
@@ -48,10 +47,10 @@ const kinds = (outline: boolean): Kinds => {
   }
 }
 
-export interface ButtonProps {
-  scale: 'small' | 'normal' | 'big'
-  kind: 'primary' | 'secondary' | 'cancel' | 'dark' | 'gray'
-  outline: boolean
+export type ButtonProps = {
+  scale?: 'small' | 'normal' | 'big'
+  kind?: 'primary' | 'secondary' | 'cancel' | 'dark' | 'gray'
+  outline?: boolean
 }
 
 const getScale = ({ scale = 'normal' }: ButtonProps) => scales[scale]
@@ -67,6 +66,6 @@ const ButtonStyled = styled('button')<ButtonProps>`
   border-radius: 3px;
 `
 
-export const Button: SFC<ButtonProps> = ({ children, ...props }) => (
+export const Button: React.FC<ButtonProps> = ({ children, ...props }) => (
   <ButtonStyled {...props}>{children}</ButtonStyled>
 )

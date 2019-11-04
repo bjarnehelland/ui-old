@@ -1,8 +1,8 @@
-import * as React from 'react'
+import React from 'react'
 import styled from '@emotion/styled'
 
-export interface CardProps {
-  kind: 'bordered' | 'raised' | 'floating' | 'popping'
+export type CardProps = {
+  kind?: 'bordered' | 'raised' | 'floating' | 'popping'
 }
 
 const kinds = {
@@ -41,6 +41,6 @@ const StyledCard = styled('div')<CardProps>`
   ${getKind};
 `
 
-export const Card: React.SFC<CardProps> = ({ children, ...props }) => (
+export const Card: React.FC<CardProps> = ({ children, ...props }) => (
   <StyledCard {...props}>{children}</StyledCard>
 )
