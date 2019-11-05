@@ -1,7 +1,14 @@
-import * as React from 'react'
-import styled from 'styled-components'
+import React from 'react'
+import styled from '@emotion/styled'
 import cx from 'classnames'
 import * as d3 from 'd3-array'
+
+export const sampleData = [
+  { team: 'team a', p: 11, w: 10, d: 1, l: 0, gf: 25, ga: 9, gd: 16, pts: 31 },
+  { team: 'team b', p: 11, w: 8, d: 1, l: 2, gf: 34, ga: 10, gd: 24, pts: 25 },
+  { team: 'team c', p: 11, w: 7, d: 2, l: 2, gf: 27, ga: 8, gd: 19, pts: 23 },
+  { team: 'team d', p: 11, w: 7, d: 2, l: 2, gf: 25, ga: 17, gd: 8, pts: 23 },
+]
 
 type Row = { [key: string]: any }
 type Column = {
@@ -56,7 +63,6 @@ export const Table: React.FC<TableProps> = ({ data }) => {
       max,
     }
   })
-  console.log(columns)
   return (
     <StyledTable>
       <thead>
@@ -75,7 +81,7 @@ export const Table: React.FC<TableProps> = ({ data }) => {
   )
 }
 
-const StyledTable = styled.table`
+const StyledTable = styled('table')<TableProps>`
   td.number {
     text-align: right;
   }
