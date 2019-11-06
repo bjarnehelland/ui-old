@@ -81,7 +81,7 @@ export const Table: React.FC<TableProps> = ({ data }) => {
   )
 }
 
-const StyledTable = styled('table')<TableProps>`
+const StyledTable = styled('table')`
   td.number {
     text-align: right;
   }
